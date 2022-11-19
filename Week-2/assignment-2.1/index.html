@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Assignment 2.1</title>
+  <style>
+    .main_wrapper {
+      width: 200px;
+      margin: 150px;
+      display: flex;
+      position: relative;
+    }
+
+    div[class^="cube_"] {
+      width: 100px;
+      height: 100px;
+      transition: all 1s ease-in-out;
+    }
+
+    .cube_1 {
+      background: red;
+      transform-origin: left top;
+    }
+
+    .main_wrapper:hover .cube_1 {
+      transform: rotate(90deg);
+    }
+
+    .cube_2 {
+      background: blue;
+      transform-origin: left bottom;
+    }
+
+    .main_wrapper:hover .cube_2 {
+      transform: rotate(-90deg);
+    }
+
+    .cube_3 {
+      background: yellow;
+      transform-origin: right top;
+    }
+
+    .main_wrapper:hover .cube_3 {
+      transform: rotate(-90deg);
+    }
+
+    .cube_4 {
+      background: green;
+      transform-origin: right bottom;
+    }
+
+    .main_wrapper:hover .cube_4 {
+      transform: rotate(90deg);
+    }
+
+    .centet-text {
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+      font-size: 16px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main_wrapper">
+    <div class="centet-text">
+      <h1>HI !</h1>
+    </div>
+    <div>
+      <div class="cube_1"></div>
+      <div class="cube_2"></div>
+    </div>
+    <div>
+      <div class="cube_3"></div>
+      <div class="cube_4"></div>
+    </div>
+  </div>
+</body>
+
+</html>
